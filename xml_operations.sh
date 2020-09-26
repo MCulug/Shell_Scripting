@@ -1,8 +1,8 @@
 #!/bin/sh
-WSPcount=`cat input.txt | wc -l`    #count the rows inside text
+Pcount=`cat input.txt | wc -l`    #count the rows inside text
 i=1
 
-while [ $i -le $WSPcount ];         #loop for the word count
+while [ $i -le $Pcount ];         #loop for the word count
 do
 sed -n $i'p' input.txt > temp.txt   #copy first row of input file to temporary file for loop
 
