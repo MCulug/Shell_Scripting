@@ -23,7 +23,7 @@ extract_parameter=`sed -n '/.*<sometag>\([^<][^<]*\)<\/sometag>.*/s//\1/p' statu
 
 cat $extract_parameter | openssl enc -base64 >> Upload.xml                              #encode base64 the file and write it to xml
 
-curl -k -u user:pass -d @Upload.xml https://targethost > $WSPname"uploadresult.xml"     #make the final curl request
+curl -k -u user:pass -d @Upload.xml https://targethost > $parameter_one"uploadresult.xml"     #make the final curl request
 >Upload.xml
 
 i=$(($i+1))
