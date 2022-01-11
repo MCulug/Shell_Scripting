@@ -1,8 +1,8 @@
 #!/bin/bash
 
-USER_NAME=api.admin
+USER_NAME=someuser
 USER_PASSWORD=somepass
-CONFLUENCE_BASE_URL=https://sdlctest.ibtech.com.tr:444/confluence
+CONFLUENCE_BASE_URL=https://someurl:someportnumber/confluence
 i=$(($1))                      #index number
 
 while [ $i -le $2 ];         #loop from first dir to last
