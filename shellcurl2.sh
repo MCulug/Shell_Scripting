@@ -1,8 +1,8 @@
 #!/bin/sh
 
-USER_NAME=api.admin
+USER_NAME=someuser
 USER_PASSWORD=pass
-CONFLUENCE_BASE_URL=https://sdlctest.ibtech.com.tr:444/confluence
+CONFLUENCE_BASE_URL=https://someurl:someportnumber/confluence
 i=1
 
 ls KB > counter.txt
